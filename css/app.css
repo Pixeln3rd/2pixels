@@ -29,6 +29,9 @@ strong{
 .header a:hover{
 	text-decoration: none;
 }
+.gallery .columns{
+	text-align: center;
+}
 [data-sticky] {
   width: 100%; }
 
