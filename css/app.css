@@ -1,0 +1,86 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	background-color: #c0c8cb;
+}
+h1,h2,h3,h4,h5,p,ul,li,td,tr,strong{
+	font-family: 'Open Sans', sans-serif;
+}
+strong{
+	font-weight: 700;
+}
+.logo{
+	height: 50px;
+}
+.is-stuck .logo{
+	height: 25px;
+}
+.header {
+  background-color: #206d88;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  padding: 2px;
+  text-align: center;
+}
+.header a{
+	color: #6fd539;
+	text-decoration: underline;
+	transition: all .25s ease-in-out;
+}
+.header a:hover{
+	text-decoration: none;
+}
+[data-sticky] {
+  width: 100%; }
+
+.top-bar {
+  padding: 2rem;
+  background-color: rgba(255,255,255,0.75);
+  transition: padding .25s ease; }
+
+.is-stuck .top-bar {
+  padding: 1rem;
+  transition: padding .25s ease; }
+.row.content{
+	background-color: white;
+}
+.row.content.main{
+	border-radius: 3px 3px 0 0;
+}
+.content.main .columns{
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.hero{
+	width: 100%;
+}
+.grav{
+	margin: 40px auto;
+	display: block;
+}
+.headline{
+	margin-top: 50px;
+}
+.row.last{
+	margin-bottom: 50px;
+}
+.row#footer{
+	background-color: #206d88;
+	margin-bottom: 50px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: white;
+	border-radius: 0 0 3px 3px;
+}
+.row#footer p{
+	margin: 0;
+	padding: 0;
+}
+.row#footer i{
+	font-size: 28px;
+}
+/*
+#ffca07
+#ea2127
+#00a44f
+*/
