@@ -8,6 +8,12 @@ h1,h2,h3,h4,h5,p,ul,li,td,tr,strong{
 strong{
 	font-weight: 700;
 }
+a {
+	color: #70d539;
+}
+a:hover, a:focus {
+	color: rgba(112,213,57,0.65);
+}
 .logo{
 	height: 50px;
 }
