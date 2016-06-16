@@ -1,9 +1,11 @@
 body{
-	font-family: 'Open Sans', sans-serif;
-	background-color: #c0c8cb;
+	font-family: 'Ubuntu', sans-serif;
+	/*background-color: #c0c8cb;*/
+	background-color: #ffffff;
+	font-weight: 400;
 }
 h1,h2,h3,h4,h5,p,ul,li,td,tr,strong{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 }
 strong{
 	font-weight: 700;
@@ -18,12 +20,12 @@ a:hover, a:focus {
 	height: 50px;
 }
 .is-stuck .logo{
-	height: 25px;
+	height: 38px;
 }
 .header {
   background-color: #206d88;
   color: white;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   padding: 2px;
   text-align: center;
 }
@@ -39,21 +41,31 @@ a:hover, a:focus {
 	text-align: center;
 }
 [data-sticky] {
-  width: 100%; }
+	width: 100%;
+}
 
 .top-bar {
-  padding: 2rem;
-  background-color: rgba(255,255,255,0.75);
-  transition: padding .25s ease; }
-
+	padding: 2rem;
+	background-color: rgba(255,255,255,1);
+	transition: padding .25s ease;
+	border-bottom: solid 1px #e2e2e2;
+}
+.top-bar ul {
+	background-color: transparent;
+}
 .is-stuck .top-bar {
-  padding: 1rem;
-  transition: padding .25s ease; }
+	padding: 1rem;
+	background-color: rgba(255,255,255,0.75);
+	transition: padding .25s ease; 
+}
 .row.content{
 	background-color: white;
 }
 .row.content.main{
 	border-radius: 3px 3px 0 0;
+	border-top: solid 1px #e2e2e2;
+	border-left: solid 1px #e2e2e2;
+	border-right: solid 1px #e2e2e2;
 }
 .content.main .columns{
 	text-align: center;
@@ -69,6 +81,10 @@ a:hover, a:focus {
 }
 .headline{
 	margin-top: 50px;
+	
+}
+.tiny{
+	width: 60px;
 }
 .row.last{
 	margin-bottom: 50px;
@@ -87,6 +103,29 @@ a:hover, a:focus {
 }
 .row#footer i{
 	font-size: 28px;
+}
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+	
+}
+/* Medium and up */
+@media screen and (min-width: 40em) {
+	.hero {
+		height: 75vh;
+	}
+	.row.content.main{
+		margin-top: 50px;
+	}
+}
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+	
+}
+/* Large and up */
+@media screen and (min-width: 64em) {
+	.hero {
+		height: 100vh;
+	}
 }
 /*
 #ffca07
