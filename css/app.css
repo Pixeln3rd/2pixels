@@ -127,6 +127,9 @@ a:hover, a:focus {
 	margin: 0;
 	padding: 0;
 }
+.row#footer a{
+	color: white;
+}
 .row#footer i{
 	font-size: 28px;
 }
