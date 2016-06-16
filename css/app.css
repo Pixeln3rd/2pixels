@@ -130,6 +130,10 @@ a:hover, a:focus {
 .row#footer a{
 	color: white;
 	text-decoration: none;
+	margin-left: 10px;
+}
+.row#footer a.has-tip {
+	border-bottom: none;
 }
 .row#footer i{
 	font-size: 28px;
