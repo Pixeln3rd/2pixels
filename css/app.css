@@ -129,6 +129,7 @@ a:hover, a:focus {
 }
 .row#footer a{
 	color: white;
+	text-decoration: none;
 }
 .row#footer i{
 	font-size: 28px;
