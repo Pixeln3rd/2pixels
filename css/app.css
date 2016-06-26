@@ -50,7 +50,7 @@ a:hover, a:focus {
 	height: 32px;
 }
 .header {
-  background-color: #206d88;
+  background-color: #009eff;
   color: white;
   font-family: 'Ubuntu', sans-serif;
   padding: 5px;
@@ -73,7 +73,7 @@ a:hover, a:focus {
 
 .top-bar {
 	padding: 2rem;
-	background-color: rgba(255,255,255,1);
+	background-color: rgba(0,0,0,0.8);
 	transition: padding .25s ease;
 }
 .top-bar ul {
@@ -81,7 +81,7 @@ a:hover, a:focus {
 }
 .is-stuck .top-bar {
 	padding: 1rem;
-	background-color: rgba(255,255,255,0.9);
+	background-color: rgba(0,0,0,0.5);
 	transition: padding .25s ease; 
 }
 .row.content{
@@ -103,8 +103,15 @@ a:hover, a:focus {
 	padding-bottom: 50px;
 }
 .hero{
-	width: 100%;
+	background: url(../img/hero-milky-way.jpg) top left no-repeat #000;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding: 50px 0;
+	min-height: auto;
 }
+
 .center-block-img{
 	margin: 40px auto;
 	display: block;
@@ -149,10 +156,10 @@ a:hover, a:focus {
 /* Medium and up */
 @media screen and (min-width: 40em) {
 	.hero {
-		height: 75vh;
+		min-height: 35vh;
 	}
 	.top-bar {
-		border-bottom: solid 1px #e2e2e2;
+		border-bottom: solid 1px #009eff;
 	}
 	.row.content.main{
 		margin-top: 50px;
@@ -165,7 +172,7 @@ a:hover, a:focus {
 /* Large and up */
 @media screen and (min-width: 64em) {
 	.hero {
-		height: 100vh;
+		min-height: 60vh;
 	}
 }
 img.spin-it {
