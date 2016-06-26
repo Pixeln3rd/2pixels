@@ -93,6 +93,10 @@ a:hover, a:focus {
 	border-left: solid 1px #e2e2e2;
 	border-right: solid 1px #e2e2e2;
 }
+.row.content.mid{
+	border-left: solid 1px #e2e2e2;
+	border-right: solid 1px #e2e2e2;
+}
 .content.main .columns{
 	text-align: center;
 	padding-top: 50px;
@@ -177,3 +181,33 @@ img.spin-it:hover {
 #ea2127
 #00a44f
 */
+.barchart { 
+  background-color: #a3dbe3;
+  height: 1em;
+  padding: 0em;
+  margin: 0.625em 0; 
+  width: 100%; }
+
+.barchart .meter {
+  background: #2daebf;
+  height: 100%;
+  display: block; }
+
+table.chart { 
+  width: 100%;
+  border-width: 0;
+  margin: 40px 0; }
+
+table tr.even, table tr.alt, table tr:nth-of-type(even) { 
+	background: #FFF; }
+
+td.chart {
+  font-size: 14px;
+  margin-bottom: 50px;
+  padding: 0 0 20px 0; }
+
+p.percentage {
+  font-size: 30px !important; 
+  color: #6f6f6f;
+  font-weight: 300;
+  margin-bottom: 17px;}
