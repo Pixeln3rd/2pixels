@@ -248,7 +248,7 @@ a:hover, a:focus {
 /* Medium and up */
 @media screen and (min-width: 40em) {
 	.hero {
-		/*min-height: 35vh;*/
+		min-height: 60vh;
 	}
 	.top-bar {
 		/*border-bottom: solid 1px #009eff;*/
@@ -264,7 +264,7 @@ a:hover, a:focus {
 /* Large and up */
 @media screen and (min-width: 64em) {
 	.hero {
-		/*min-height: 60vh;*/
+		min-height: 98vh;
 	}
 }
 img.spin-it {
