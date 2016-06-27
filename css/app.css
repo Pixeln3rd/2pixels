@@ -171,13 +171,14 @@ a:hover, a:focus {
 	color: #ffffff;
 	padding-top: 150px;
 }
-
+.headline{
+	text-transform: uppercase;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 900;		
+}
 .center-block-img{
 	margin: 40px auto;
 	display: block;
-}
-.headline{
-		
 }
 .tiny{
 	width: 60px;
