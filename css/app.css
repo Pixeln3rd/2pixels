@@ -1,13 +1,13 @@
 body{
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
 	/*background-color: #c0c8cb;*/
 	background-color: #ffffff;
 	font-weight: 400;
 }
 h1,h2,h3,h4,h5,p,ul,li,td,tr,strong{
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
 }
-strong{
+h1,h2,h3,h4,h5,strong{
 	font-weight: 700;
 }
 a {
@@ -16,14 +16,25 @@ a {
 a:hover, a:focus {
 	color: rgba(112,213,57,0.65);
 }
+.site-title{
+	color: #206d88;
+	font-size: 24px;
+	font-weight: 900;
+	text-transform: uppercase;
+	font-family: 'Titillium Web', sans-serif;
+}
+
 .menu > li > a {
 	transition: all .25s ease-in-out;
-    display: block;
-    padding: 0.5rem 0;
-    line-height: 1;
-    color: #206d88;
+    color: #ffffff;
+    font-weight: 400;
     position: relative;
-    margin: 0 20px;
+    text-transform: uppercase;
+    display: block;
+    padding: 0.7rem 0;
+    line-height: 1;
+    margin: 0 1rem;
+    font-family: 'Titillium Web', sans-serif;
 }
 .menu > li > a:after{
 	transition: all .25s ease-in-out;
@@ -36,12 +47,48 @@ a:hover, a:focus {
 	width: 0%;
 	background-color: #206d88;
 }
+.menu.menu-panel > li > a:after{
+	top: 100%;
+}
+.menu-panel{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: inset 5px;
+    border-color: #2199e8 transparent transparent;
+    border-top-style: solid;
+    border-bottom-width: 0;
+    left: -15px;
+    margin-top: -2px;
+    background-color: transparent;
+}
+.dropdown.menu > li.is-dropdown-submenu-parent > a {
+    padding-right: 0;
+    position: relative;
+}
 .menu > li > a:hover{
-
+	color: #206d88;	
 }
 .menu > li > a:hover:after{
 	width: 100%;
-	
+}
+.menu-icon.dark {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    width: 20px;
+    height: 25px;
+    margin-right: 10px;
+}
+.submenu{
+	background-color: rgba(0,0,0,0.5) !important;	
+	border: none;
 }
 .logo{
 	height: 36px;
@@ -50,14 +97,19 @@ a:hover, a:focus {
 	height: 32px;
 }
 .header {
-  background-color: #009eff;
+  background-color: #000;
   color: white;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   padding: 5px;
   text-align: center;
+  overflow: hidden;
+}
+.header.closed{
+	height: 0px !important;
+	padding: 0px !important;
 }
 .header a{
-	color: #6fd539;
+	color: #206d88;
 	text-decoration: underline;
 	transition: all .25s ease-in-out;
 }
@@ -70,18 +122,20 @@ a:hover, a:focus {
 [data-sticky] {
 	width: 100%;
 }
-
 .top-bar {
 	padding: 2rem;
-	background-color: rgba(0,0,0,0.8);
-	transition: padding .25s ease;
+	background-color: rgba(0,0,0,0.2);
+}
+.top-bar-title {
+    float: left;
+    margin-right: 2.5rem;
 }
 .top-bar ul {
 	background-color: transparent;
 }
 .is-stuck .top-bar {
 	padding: 1rem;
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0,0,0,0.2);
 	transition: padding .25s ease; 
 }
 .row.content{
@@ -102,14 +156,20 @@ a:hover, a:focus {
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
-.hero{
-	background: url(../img/hero-milky-way.jpg) top left no-repeat #000;
+#hero{
+	background: url(../img/1920x1080-space-red-nebulae.jpg) bottom right no-repeat #000;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	border-bottom: solid 5px #206d88;
+	margin-top: -70px;
+}	
+.hero{
 	padding: 50px 0;
 	min-height: auto;
+	color: #ffffff;
+	padding-top: 150px;
 }
 
 .center-block-img{
@@ -117,8 +177,7 @@ a:hover, a:focus {
 	display: block;
 }
 .headline{
-	margin-top: 50px;
-	
+		
 }
 .tiny{
 	width: 60px;
@@ -149,6 +208,38 @@ a:hover, a:focus {
 .row#footer i{
 	font-size: 28px;
 }
+.row#sub-footer{
+	background-color: #000;
+	margin-bottom: 0px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	color: #206d88;
+}
+.accordion-title {
+    display: block;
+    padding: 1.25rem 1rem;
+    line-height: 1;
+    font-size: 1rem;
+    color: #206d88;
+    position: relative;
+    border: none;
+    border-bottom: 0;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+}
+.accordion {
+    list-style-type: none;
+    background: #fff;
+    margin-left: 0;
+    margin-bottom: 50px;
+}
+:last-child:not(.is-active) > .accordion-title {
+    border-radius: 0 0 0 0;
+    border-bottom: none;
+}
+.accordion-title:hover, .accordion-title:focus {
+    background-color: #fff;
+}
 /* Small only */
 @media screen and (max-width: 39.9375em) {
 	
@@ -156,10 +247,10 @@ a:hover, a:focus {
 /* Medium and up */
 @media screen and (min-width: 40em) {
 	.hero {
-		min-height: 35vh;
+		/*min-height: 35vh;*/
 	}
 	.top-bar {
-		border-bottom: solid 1px #009eff;
+		/*border-bottom: solid 1px #009eff;*/
 	}
 	.row.content.main{
 		margin-top: 50px;
@@ -172,7 +263,7 @@ a:hover, a:focus {
 /* Large and up */
 @media screen and (min-width: 64em) {
 	.hero {
-		min-height: 60vh;
+		/*min-height: 60vh;*/
 	}
 }
 img.spin-it {
